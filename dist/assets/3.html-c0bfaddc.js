@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-35de2019","path":"/ppt/ai/3.html","title":"AI步骤思路","lang":"zh-CN","frontmatter":{"seo":false,"head":[]},"headers":[],"git":{"createdTime":null,"updatedTime":null,"contributors":[]},"readingTime":{"minutes":0.15,"words":46},"filePathRelative":"ppt/ai/3.md","copyright":{},"excerpt":""}');export{e as data};

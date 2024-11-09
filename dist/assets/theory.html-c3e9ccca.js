@@ -1,0 +1,1 @@
+import{_ as t,K as a,L as r,M as e,N as o}from"./framework-edebdfe1.js";const c={},s=e("h1",{id:"理论基础",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#理论基础","aria-hidden":"true"},"#"),o(" 理论基础")],-1),n=[s];function _(d,h){return a(),r("div",null,n)}const l=t(c,[["render",_],["__file","theory.html.vue"]]);export{l as default};

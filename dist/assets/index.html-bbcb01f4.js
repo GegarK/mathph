@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5457a1d3","path":"/ppt/ai/","title":"网络安全AI","lang":"zh-CN","frontmatter":{"seo":false,"head":[]},"headers":[],"git":{"createdTime":null,"updatedTime":null,"contributors":[]},"readingTime":{"minutes":0.62,"words":186},"filePathRelative":"ppt/ai/README.md","copyright":{},"excerpt":""}');export{e as data};

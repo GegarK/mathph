@@ -1,0 +1,1 @@
+import{_ as a,K as c,L as r,M as e,N as o}from"./framework-edebdfe1.js";const t={},n=e("h1",{id:"anchor",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#anchor","aria-hidden":"true"},"#"),o(" Anchor")],-1),s=[n];function _(h,d){return c(),r("div",null,s)}const l=a(t,[["render",_],["__file","anchor.html.vue"]]);export{l as default};
