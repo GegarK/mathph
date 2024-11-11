@@ -1,1 +1,0 @@
-import{_ as s,K as a,L as r,M as e,N as o}from"./framework-edebdfe1.js";const t={},c=e("h1",{id:"seahorse",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#seahorse","aria-hidden":"true"},"#"),o(" Seahorse")],-1),n=[c];function _(h,d){return a(),r("div",null,n)}const l=s(t,[["render",_],["__file","seahorse.html.vue"]]);export{l as default};

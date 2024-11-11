@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-32746edb","path":"/ppt/ai/1.html","title":"简单数学规律","lang":"zh-CN","frontmatter":{"seo":false,"head":[]},"headers":[],"git":{"createdTime":null,"updatedTime":null,"contributors":[]},"readingTime":{"minutes":0.13,"words":40},"filePathRelative":"ppt/ai/1.md","copyright":{},"excerpt":""}');export{e as data};

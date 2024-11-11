@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-744b6ab4","path":"/ppt/","title":"课程PPT","lang":"zh-CN","frontmatter":{"seo":false,"head":[]},"headers":[],"git":{"createdTime":null,"updatedTime":null,"contributors":[]},"readingTime":{"minutes":0.03,"words":8},"filePathRelative":"ppt/README.md","copyright":{},"excerpt":""}');export{e as data};

@@ -1,1 +1,0 @@
-import{_ as s,K as a,L as r,M as e,N as t}from"./framework-edebdfe1.js";const n={},c=e("h1",{id:"zk-snarks",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#zk-snarks","aria-hidden":"true"},"#"),t(" ZK-Snarks")],-1),o=[c];function _(d,i){return a(),r("div",null,o)}const l=s(n,[["render",_],["__file","snarks.html.vue"]]);export{l as default};
