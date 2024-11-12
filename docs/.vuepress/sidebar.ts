@@ -5,6 +5,7 @@ export default sidebar(
     "/sltx/":[
       "",
       "history",
+      "people",
       "func",
       "sym"
     ],
@@ -16,7 +17,8 @@ export default sidebar(
       "program"
     ],
     "/computer/alg":[
-      ""
+      "",
+      "ecc"
     ],
     "/computer/AI":[
       ""
