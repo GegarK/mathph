@@ -5,7 +5,21 @@ export default sidebar(
     "/sltx/":[
       "",
       "history",
-      "china"
+      "func",
+      "sym"
+    ],
+    "/computer/":[
+      "",
+      "alg",
+      "AI/",
+      "vision",
+      "program"
+    ],
+    "/computer/alg":[
+      ""
+    ],
+    "/computer/AI":[
+      ""
     ]
   },
 );

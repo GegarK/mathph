@@ -1,0 +1,1 @@
+import{_ as t,K as a,L as s,M as e,N as o}from"./framework-62f80ba1.js";const c={},n=e("h1",{id:"可视化数学",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#可视化数学","aria-hidden":"true"},"#"),o(" 可视化数学")],-1),r=[n];function _(i,d){return a(),s("div",null,r)}const l=t(c,[["render",_],["__file","vision.html.vue"]]);export{l as default};

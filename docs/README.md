@@ -37,17 +37,32 @@ features:
   - title: 数学历史
     icon: study
     details: 数学历史
-    link: /sltx/
+    link: /sltx/history
+  
+  - title: 数学人物
+    icon: study
+    details: 数学人物
+    link: /sltx/people
 
   - title: 数学作用
     icon: study
     details: 数学作用
-    link: /sltx/
+    link: /sltx/func
+
+  - title: 数学符号
+    icon: study
+    details: 数学作用
+    link: /sltx/sym
 
   - title: 计算机数学
     icon: study
     details: 计算机与数学结合
-    link: /sltx/
+    link: /computer/
+
+  - title: 人工智能AI
+    icon: back-stage
+    details: 机器学习，深度学习算法
+    link: /computer/AI
 
   - title: AI安全
     icon: back-stage
@@ -59,9 +74,9 @@ features:
     icon: back-stage
     details: 直播答疑
     link: https://deelmind.com/pay/alive
-
+  
   - title: 网安科普
-    icon: news
+    icon: back-stage
     details: 与其让他们忽悠你，不如我来告诉你真相
     link: https://deelmind.com/mind/kepu
 
@@ -73,7 +88,7 @@ features:
   - title: 密码学
     icon: back-stage
     details: 密码学，密码学安全
-    link: /program/program/
+    link: /computer/alg
 
 copyright: false
 footer: Copyright © 2023 <a href="https://deelmind.com" target="_blank">極客方舟</a>

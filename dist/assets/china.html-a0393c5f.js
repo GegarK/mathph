@@ -1,1 +1,0 @@
-import{_ as a,K as t,L as c,M as e,N as n}from"./framework-62f80ba1.js";const r={},s=e("h1",{id:"中国数学",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#中国数学","aria-hidden":"true"},"#"),n(" 中国数学")],-1),o=[s];function _(d,i){return t(),c("div",null,o)}const l=a(r,[["render",_],["__file","china.html.vue"]]);export{l as default};
