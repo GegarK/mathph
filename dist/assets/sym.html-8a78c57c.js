@@ -1,1 +1,0 @@
-import{_ as t,K as a,L as s,M as e,N as c}from"./framework-62f80ba1.js";const r={},o=e("h1",{id:"数学符号",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#数学符号","aria-hidden":"true"},"#"),c(" 数学符号")],-1),n=[o];function _(d,i){return a(),s("div",null,n)}const l=t(r,[["render",_],["__file","sym.html.vue"]]);export{l as default};
