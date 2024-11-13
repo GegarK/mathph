@@ -44,7 +44,7 @@ export default navbar([
     text: "几何", 
     icon: "semantic",
     children:[
-      { text: "X", link: "", icon: "arrow" },
+      { text: "代数几何", link: "/geometry", icon: "arrow" },
     ]
   },
   { 

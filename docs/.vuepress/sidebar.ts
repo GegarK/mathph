@@ -22,6 +22,14 @@ export default sidebar(
     ],
     "/computer/AI":[
       ""
+    ],
+    "/geometry":[
+      "",
+      "algeo/"
+    ],
+    "/geometry/algeo":[
+      "",
+      "ecc"
     ]
   },
 );
