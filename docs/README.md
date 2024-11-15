@@ -87,8 +87,8 @@ features:
 
   - title: 密码学
     icon: back-stage
-    details: 密码学，密码学安全
-    link: /computer/alg
+    details: 密码学，密码学安全，密码安全
+    link: /computer/salg
 
 copyright: false
 footer: Copyright © 2023 <a href="https://deelmind.com" target="_blank">極客方舟</a>

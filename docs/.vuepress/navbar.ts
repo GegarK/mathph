@@ -60,6 +60,7 @@ export default navbar([
     children:[
       { text: "计算机数学", link: "/computer/", icon: "arrow" },
       { text: "计算机算法", link: "/computer/alg", icon: "arrow" },
+      { text: "密码学安全", link: "/computer/salg", icon: "arrow" },
       { text: "人工智能AI", link: "/computer/AI", icon: "arrow" },
     ]
   },

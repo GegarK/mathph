@@ -12,13 +12,28 @@ export default sidebar(
     "/computer/":[
       "",
       "alg",
+      "salg",
       "AI/",
       "vision",
       "program"
     ],
     "/computer/alg":[
       "",
-      "ecc"
+    ],
+    "/computer/salg":[
+      "",
+      "safe",
+      "base",
+      "aes",
+      "des",
+      "md5",
+      "sha",
+      "rsa",
+      "ecc",
+      "qkd",
+      "zk-starks",
+      "zk-snarks",
+      
     ],
     "/computer/AI":[
       ""
