@@ -26,6 +26,7 @@ export default sidebar(
       "base",
       "aes",
       "des",
+      "crc",
       "md5",
       "sha",
       "rsa",
