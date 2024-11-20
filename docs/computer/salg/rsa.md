@@ -159,6 +159,77 @@ decrypted_message = rsa_decrypt(ciphertext, private_key)
 print(f"解密后的消息: {decrypted_message}")
 ```
 
+# RSA破解
+
+```py
+import math
+
+# 辗转相除法求最大公约数
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+# 扩展欧几里得算法计算模逆元
+def extended_gcd(a, b):
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r != 0:
+        quotient = old_r // r
+        old_r, r = r, old_r - quotient * r
+        old_s, s = s, old_s - quotient * s
+        old_t, t = t, old_t - quotient * t
+    return old_s, old_t
+
+# 快速幂算法：计算 (base^exp) % mod
+def mod_exp(base, exp, mod):
+    result = 1
+    base = base % mod
+    while exp > 0:
+        if exp % 2 == 1:
+            result = (result * base) % mod
+        exp = exp >> 1
+        base = (base * base) % mod
+    return result
+
+# 分解 n 为 p 和 q
+def factorize_n(n):
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            return i, n // i
+    raise ValueError("Failed to factorize n")
+
+# 破解 RSA
+def crack_rsa(n, e, ciphertext):
+    # 1. 分解 n
+    p, q = factorize_n(n)
+    print(f"分解结果: p = {p}, q = {q}")
+
+    # 2. 计算 φ(n)
+    phi_n = (p - 1) * (q - 1)
+
+    # 3. 计算私钥 d
+    d, _ = extended_gcd(e, phi_n)
+    if d < 0:
+        d += phi_n
+
+    print(f"计算出的私钥: d = {d}")
+
+    # 4. 解密密文
+    plaintext = mod_exp(ciphertext, d, n)
+    return plaintext
+
+# 示例数据
+n = 3233  # 公钥模数
+e = 17    # 公钥指数
+ciphertext = 2790  # 密文
+
+# 破解 RSA
+plaintext = crack_rsa(n, e, ciphertext)
+print(f"破解后的明文: {plaintext}")
+```
+
 
 # 快速幂算法
 
