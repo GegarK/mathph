@@ -30,7 +30,7 @@ export default navbar([
     text: "数论",
     icon: "network",
     children:[
-      { text: "X", link: "", icon: "arrow" },
+      { text: "初等数论", link: "/nt/ent", icon: "arrow" },
     ]
   },
   {

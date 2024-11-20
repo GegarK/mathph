@@ -46,6 +46,16 @@ export default sidebar(
     "/geometry/algeo":[
       "",
       "ecc"
+    ],
+    "/nt":[
+      "",
+      "ent/"
+    ],
+    "/nt/ent":[
+      "",
+      "mod",
+      "eulerf",
+      "eea"
     ]
   },
 );
