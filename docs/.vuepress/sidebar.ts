@@ -11,13 +11,13 @@ export default sidebar(
     ],
     "/computer/":[
       "",
-      "alg",
+      "calg",
       "salg",
       "AI/",
       "vision",
       "program"
     ],
-    "/computer/alg":[
+    "/computer/calg":[
       "",
     ],
     "/computer/salg":[
@@ -32,6 +32,8 @@ export default sidebar(
       "rsa",
       "ecc",
       "qkd",
+      "he",
+      "zero",
       "zk-starks",
       "zk-snarks",
       
@@ -55,7 +57,22 @@ export default sidebar(
       "",
       "mod",
       "eulerf",
-      "eea"
+      "eea",
+      "dl"
+    ],
+    "/alg":[
+      "",
+      "group/",
+      "filed"
+    ],
+    "/alg/group":[
+      "",
+      "sub",
+      "Abelian",
+      "Cyclic"
+    ],
+    "/alg/filed":[
+      ""
     ]
   },
 );

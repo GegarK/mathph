@@ -23,7 +23,7 @@ export default navbar([
     text: "分析",
     icon: "debug",
     children:[
-      { text: "X", link: "", icon: "arrow" },
+      { text: "代数", link: "/alg", icon: "arrow" },
     ]
   },
   {
