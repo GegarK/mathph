@@ -11,8 +11,8 @@ export default sidebar(
     ],
     "/computer/":[
       "",
-      "calg",
-      "salg",
+      "calg/",
+      "salg/",
       "AI/",
       "vision",
       "program"
@@ -36,6 +36,7 @@ export default sidebar(
       "zero",
       "zk-starks",
       "zk-snarks",
+      "PLONK"
       
     ],
     "/computer/AI":[
@@ -43,11 +44,6 @@ export default sidebar(
     ],
     "/geometry":[
       "",
-      "algeo/"
-    ],
-    "/geometry/algeo":[
-      "",
-      "ecc"
     ],
     "/nt":[
       "",
@@ -61,17 +57,36 @@ export default sidebar(
       "dl"
     ],
     "/alg":[
+      "elementary",
+      "abstract",
+      "geometry",
+      "topology"
+    ],
+    "/alg/elementary":[
+      ""
+    ],
+    "/alg/abstract":[
       "",
       "group/",
-      "filed"
+      "filed/"
     ],
-    "/alg/group":[
+    "/alg/abstract/group":[
       "",
       "sub",
       "Abelian",
       "Cyclic"
     ],
-    "/alg/filed":[
+    "/alg/abstract/filed":[
+      ""
+    ],
+    "/alg/geometry":[
+      "",
+      "ecc"
+    ],
+    "/alg/topology":[
+      ""
+    ],
+    "/ph":[
       ""
     ]
   },

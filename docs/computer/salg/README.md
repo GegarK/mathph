@@ -1,9 +1,10 @@
-# 计算机算法
+# 计算机密码
 
 ::: warning DeeLMind 提示
-算法是无穷的，数学是根本的
+密码是无穷的，数学是根本的
 :::
 
+<DocsAD/>
 
 ## 1. 对称加密算法 (Symmetric Encryption)
 

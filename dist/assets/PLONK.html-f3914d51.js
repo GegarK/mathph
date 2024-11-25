@@ -1,0 +1,1 @@
+import{_ as t,K as a,L as o,M as e,N as c}from"./framework-fa417d66.js";const n={},r=e("h1",{id:"plonk",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#plonk","aria-hidden":"true"},"#"),c(" PLONK")],-1),s=[r];function _(d,l){return a(),o("div",null,s)}const h=t(n,[["render",_],["__file","PLONK.html.vue"]]);export{h as default};

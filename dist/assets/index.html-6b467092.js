@@ -1,1 +1,0 @@
-import{_ as a,K as t,L as c,M as e,N as n}from"./framework-fa417d66.js";const r={},s=e("h1",{id:"人工智能ai",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#人工智能ai","aria-hidden":"true"},"#"),n(" 人工智能AI")],-1),o=[s];function _(d,i){return t(),c("div",null,o)}const l=a(r,[["render",_],["__file","index.html.vue"]]);export{l as default};
