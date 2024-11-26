@@ -34,6 +34,7 @@ export default sidebar(
       "ecc",
       "qkd",
       "he",
+      "threshold",
       "zkp",
     ],
     "/computer/salg/base":[
@@ -60,6 +61,7 @@ export default sidebar(
     ],
     "/computer/salg/zkp":[
       "",
+      "snarkjs",
       "plonk",
       "groth16"
     ],
