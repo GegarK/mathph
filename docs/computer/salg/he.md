@@ -2,6 +2,8 @@
 
 同态加密（Homomorphic Encryption）是一种加密方式，允许对密文进行操作而无需解密，且结果解密后与直接对明文进行相同操作的结果一致。换句话说，同态加密使得对加密数据进行计算变得可能，而不需要访问或暴露原始数据。这一特性在许多隐私保护计算场景中非常重要，例如隐私计算、云计算和安全多方计算等。
 
+<DocsAD/>
+
 ## 同态加密的类型
 
 同态加密可以分为以下几种类型：
@@ -59,3 +61,32 @@
 1. **计算开销大**：同态加密特别是全同态加密，目前的计算开销远高于常规加密，仍然是一个难题。
 2. **效率提升**：近年来，很多研究人员致力于提高同态加密的计算效率，减少延迟和资源消耗。
 3. **应用限制**：同态加密目前尚未广泛应用于所有领域，尤其是大规模数据处理和实时计算场景，还需要进一步优化。
+
+```py
+import tenseal as ts
+
+# Setup TenSEAL context
+context = ts.context(
+            ts.SCHEME_TYPE.CKKS,
+            poly_modulus_degree=8192,
+            coeff_mod_bit_sizes=[60, 40, 40, 60]
+          )
+context.generate_galois_keys()
+context.global_scale = 2**40
+
+v1 = [0, 1, 2, 3, 4]
+v2 = [4, 3, 2, 1, 0]
+
+print(v1,v2)
+
+# encrypted vectors
+enc_v1 = ts.ckks_vector(context, v1)
+enc_v2 = ts.ckks_vector(context, v2)
+
+print(enc_v1,enc_v2)
+
+result = enc_v1 + enc_v2
+v3 = result.decrypt() # ~ [4, 4, 4, 4, 4]
+
+print(v3)
+```

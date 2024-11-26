@@ -15,7 +15,9 @@ export default sidebar(
       "salg/",
       "AI/",
       "vision",
-      "program"
+      "program",
+      "cert",
+      "openssl"
     ],
     "/computer/calg":[
       "",
@@ -27,17 +29,39 @@ export default sidebar(
       "aes",
       "des",
       "crc",
-      "md5",
       "sha",
       "rsa",
       "ecc",
       "qkd",
       "he",
-      "zero",
-      "zk-starks",
-      "zk-snarks",
-      "PLONK"
-      
+      "zkp",
+    ],
+    "/computer/salg/base":[
+      ""
+    ],
+    "/computer/salg/aes":[
+      ""
+    ],
+    "/computer/salg/des":[
+      ""
+    ],
+    "/computer/salg/sha":[
+      "",
+      "md5"
+    ],
+    "/computer/salg/rsa":[
+      ""
+    ],
+    "/computer/salg/crc":[
+      ""
+    ],
+    "/computer/salg/ecc":[
+      ""
+    ],
+    "/computer/salg/zkp":[
+      "",
+      "plonk",
+      "groth16"
     ],
     "/computer/AI":[
       ""
@@ -74,7 +98,8 @@ export default sidebar(
       "",
       "sub",
       "Abelian",
-      "Cyclic"
+      "Cyclic",
+      "bmap"
     ],
     "/alg/abstract/filed":[
       ""
@@ -87,6 +112,13 @@ export default sidebar(
       ""
     ],
     "/ph":[
+      ""
+    ],
+    "/ctf":[
+      "",
+      "cryptohack"
+    ],
+    "/acm":[
       ""
     ]
   },

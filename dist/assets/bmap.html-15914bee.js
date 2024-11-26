@@ -1,0 +1,1 @@
+import{_ as a,K as t,L as c,M as e,N as r}from"./framework-fa417d66.js";const s={},o=e("h1",{id:"双线性映射",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#双线性映射","aria-hidden":"true"},"#"),r(" 双线性映射")],-1),n=[o];function _(d,i){return t(),c("div",null,n)}const l=a(s,[["render",_],["__file","bmap.html.vue"]]);export{l as default};

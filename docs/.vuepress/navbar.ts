@@ -89,6 +89,8 @@ export default navbar([
       { text: "计算机算法", link: "/computer/calg", icon: "arrow" },
       { text: "密码学安全", link: "/computer/salg", icon: "arrow" },
       { text: "人工智能AI", link: "/computer/AI", icon: "arrow" },
+      { text: "密码学-CTF", link: "/ctf", icon: "arrow" },
+      { text: "算法题目ACM", link: "/acm", icon: "arrow" },
     ]
   },
   { text: "DeeLMind", icon: "plugin", link: "https://deelmind.com" },
