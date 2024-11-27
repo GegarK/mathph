@@ -70,12 +70,6 @@ message = long_to_bytes(integer_value).decode('utf-8')
 print(message)
 ```
 
-## Encoding Challenge
-
-```py
-
-```
-
 ## XOR Starer
 
 ```py
@@ -84,3 +78,11 @@ new_string = "".join(chr(ord(c) ^ 13) for c in label)
 flag = f"crypto{{{new_string}}}"
 print(flag)  crypto{aloha}
 ```
+
+## RSA
+
+
+## ECC
+
+
+## ZKP

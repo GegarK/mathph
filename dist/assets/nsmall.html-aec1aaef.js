@@ -1,0 +1,1 @@
+import{_ as a,K as t,L as s,M as e,N as c}from"./framework-fa417d66.js";const n={},r=e("h1",{id:"生成器阶数太小",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#生成器阶数太小","aria-hidden":"true"},"#"),c(" 生成器阶数太小")],-1),o=[r];function _(l,d){return t(),s("div",null,o)}const h=a(n,[["render",_],["__file","nsmall.html.vue"]]);export{h as default};

@@ -1,0 +1,1 @@
+import{_ as t,K as o,L as a,M as e,N as c}from"./framework-fa417d66.js";const r={},s=e("h1",{id:"阶是平滑数",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#阶是平滑数","aria-hidden":"true"},"#"),c(" 阶是平滑数")],-1),n=[s];function _(d,h){return o(),a("div",null,n)}const l=t(r,[["render",_],["__file","Smooth.html.vue"]]);export{l as default};

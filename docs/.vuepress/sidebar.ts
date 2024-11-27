@@ -57,7 +57,13 @@ export default sidebar(
       ""
     ],
     "/computer/salg/ecc":[
-      ""
+      "",
+      "ecdh",
+      "ecdsa",
+      "PrefixCollisionAttack",
+      "kAttack",
+      "nsmall",
+      "Smooth"
     ],
     "/computer/salg/zkp":[
       "",

@@ -1,1 +1,0 @@
-import{_ as t,K as a,L as c,M as e,N as r}from"./framework-fa417d66.js";const s={},o=e("h1",{id:"证书格式",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#证书格式","aria-hidden":"true"},"#"),r(" 证书格式")],-1),n=[o];function _(d,i){return a(),c("div",null,n)}const l=t(s,[["render",_],["__file","cert.html.vue"]]);export{l as default};
