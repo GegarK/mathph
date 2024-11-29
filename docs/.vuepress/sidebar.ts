@@ -16,6 +16,7 @@ export default sidebar(
       "AI/",
       "vision",
       "program",
+      "sage",
       "cert",
       "openssl"
     ],
@@ -51,7 +52,8 @@ export default sidebar(
       "md5"
     ],
     "/computer/salg/rsa":[
-      ""
+      "",
+      "Coppersmith"
     ],
     "/computer/salg/crc":[
       ""

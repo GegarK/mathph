@@ -1,4 +1,6 @@
-# Prefix Collision Attack
+# 前缀篡改攻击
+
+[https://github.com/elikaski/ECC_Attacks](https://github.com/elikaski/ECC_Attacks)
 
 ## 攻击原理：
 前缀篡改攻击（Prefix Collision Attack）在签名过程中，通常的做法是先对消息进行哈希处理，然后将哈希值的高位部分用于签名。这个哈希步骤的作用是将消息压缩成固定长度，并且确保签名只能对应特定的消息内容。如果跳过哈希步骤，直接用消息的原始内容来计算签名（如示例代码中所做的那样），攻击者就能在不修改签名的情况下篡改消息内容。

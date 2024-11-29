@@ -44,37 +44,56 @@ $$
 
 ```python
 from ecdsa.ecdsa import curve_256, generator_256, Public_key, Private_key
-from Crypto.Util.number import bytes_to_long, long_to_bytes
+from Crypto.Util.number import bytes_to_long,  long_to_bytes
 from hashlib import sha256
 import random
 
-# 选择曲线和生成器
+# 扩展欧几里得算法，用于计算最大公约数，以及求解逆元
+def extended_gcd(a, b):
+    """返回 (g, x, y)，其中 a * x + b * y = g，g 是 a 和 b 的最大公约数。"""
+    if b == 0:
+        return a, 1, 0
+    else:
+        g, x, y = extended_gcd(b, a % b)
+        return g, y, x - (a // b) * y
+
+# 求 a 在模 m 下的逆元
+def inverse_mod(a, m):
+    """返回 a 在模 m 下的逆元。"""
+    g, x, y = extended_gcd(a, m)
+    if g != 1:
+        raise ValueError(f"没有 a = {a} 和 m = {m} 的逆元")
+    else:
+        return x % m  # 确保结果是正数
+
+# 选择曲线和生成元
 curve = curve_256
 generator = generator_256
-n = generator.order()
+n = generator.order()  # 生成元的阶
 
 # 创建私钥和公钥
-secret_key = 6743529130774090927928101169617481154782309
-public_key = Public_key(generator, generator * secret_key)
-private_key = Private_key(public_key, secret_key)
+secret_key = int.from_bytes(b"DeeLMind")  # 私钥
+print("secret_key",secret_key)
+public_key = Public_key(generator, generator * secret_key)  # 公钥
+private_key = Private_key(public_key, secret_key)  # 私钥对象
 
-# 使用相同的 k 签署 2 条消息
-k = random.randrange(curve.p())
+# 使用相同的 k 签名两条消息
+k = random.randrange(curve.p())  # 随机选择一个 k 值
 message1 = "Life is like a box of chocolates."
 message2 = "You never know what you're gonna get."
+# 将消息哈希化，转换为长整型
 z1 = bytes_to_long(sha256(message1.encode()).digest())
 z2 = bytes_to_long(sha256(message2.encode()).digest())
 
+# 使用相同的 k 值分别对两条消息进行签名
 signature1 = private_key.sign(z1, k)
 signature2 = private_key.sign(z2, k)
 
-# 给定两条消息和它们的签名，计算 k
+# 利用两个签名，推导出 k 的值
 found_k = (z1 - z2) * inverse_mod(signature1.s - signature2.s, n) % n
-assert k == found_k
 
-# 给定 k 和其中一条消息，计算私钥
+# 利用 k 和其中一条消息，恢复出私钥
 found_key = inverse_mod(signature1.r, n) * (found_k * signature1.s - z1) % n
-assert found_key == secret_key
-print("success!")
+
 print("The secret is:", long_to_bytes(found_key).decode())
 ```
