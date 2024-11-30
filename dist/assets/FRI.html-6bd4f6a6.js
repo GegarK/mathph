@@ -1,0 +1,1 @@
+import{_ as t,K as a,L as r,M as e,N as c}from"./framework-fa417d66.js";const s={},o=e("h1",{id:"fri",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#fri","aria-hidden":"true"},"#"),c(" FRI")],-1),n=[o];function _(d,i){return a(),r("div",null,n)}const h=t(s,[["render",_],["__file","FRI.html.vue"]]);export{h as default};

@@ -65,13 +65,25 @@ export default sidebar(
       "PrefixCollisionAttack",
       "kAttack",
       "nsmall",
-      "Smooth"
+      "Smooth",
+      "CVE-2022-0778"
     ],
     "/computer/salg/zkp":[
       "",
       "snarkjs",
       "plonk",
-      "groth16"
+      "groth16",
+      "Schnorr",
+      "Bulletproofs",
+      "Marlin",
+      "FRI",
+      "Sigma",
+      "tec",
+      "Sonic",
+      "Fractal",
+      "Halo",
+      "SuperSonic",
+      "CVE-2023–33252"
     ],
     "/computer/AI":[
       ""

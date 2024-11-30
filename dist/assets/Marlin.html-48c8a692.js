@@ -1,0 +1,1 @@
+import{_ as a,K as r,L as t,M as e,N as n}from"./framework-fa417d66.js";const c={},s=e("h1",{id:"marlin",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#marlin","aria-hidden":"true"},"#"),n(" Marlin")],-1),o=[s];function i(_,l){return r(),t("div",null,o)}const h=a(c,[["render",i],["__file","Marlin.html.vue"]]);export{h as default};

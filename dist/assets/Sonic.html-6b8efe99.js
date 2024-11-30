@@ -1,0 +1,1 @@
+import{_ as c,K as o,L as t,M as e,N as n}from"./framework-fa417d66.js";const a={},s=e("h1",{id:"sonic",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#sonic","aria-hidden":"true"},"#"),n(" Sonic")],-1),r=[s];function i(_,d){return o(),t("div",null,r)}const l=c(a,[["render",i],["__file","Sonic.html.vue"]]);export{l as default};

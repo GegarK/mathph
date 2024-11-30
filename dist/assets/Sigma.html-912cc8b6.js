@@ -1,0 +1,1 @@
+import{_ as a,K as t,L as s,M as e,N as c}from"./framework-fa417d66.js";const r={},o=e("h1",{id:"sigma",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#sigma","aria-hidden":"true"},"#"),c(" Sigma")],-1),i=[o];function n(_,d){return t(),s("div",null,i)}const h=a(r,[["render",n],["__file","Sigma.html.vue"]]);export{h as default};

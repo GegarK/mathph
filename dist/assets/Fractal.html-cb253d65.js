@@ -1,0 +1,1 @@
+import{_ as a,K as t,L as c,M as e,N as r}from"./framework-fa417d66.js";const s={},o=e("h1",{id:"fractal",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#fractal","aria-hidden":"true"},"#"),r(" Fractal")],-1),n=[o];function _(l,d){return t(),c("div",null,n)}const f=a(s,[["render",_],["__file","Fractal.html.vue"]]);export{f as default};
