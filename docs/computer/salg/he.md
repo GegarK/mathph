@@ -90,3 +90,113 @@ v3 = result.decrypt() # ~ [4, 4, 4, 4, 4]
 
 print(v3)
 ```
+
+# Paillier 加密算法
+
+**Paillier加密算法**是一种**加法同态加密**方案，它允许在加密数据上执行加法运算，而无需解密数据即可进行计算。Paillier加密方案特别适用于需要隐私保护并对加密数据进行操作的场景，如电子投票、隐私保护计算等。
+
+## Paillier 加密算法的基本概念
+
+Paillier加密是一种基于整数的同态加密方案，支持以下特性：
+
+1. **加法同态性**：Paillier加密支持加法操作，即：
+   $$
+   E(a + b) = E(a) \cdot E(b)
+   $$
+   其中$E(a)$是对$a$的加密值。
+   
+2. **不可知性**：Paillier加密是不可知的，意味着加密后的密文没有泄漏任何关于原文的明显信息。
+
+3. **安全性**：Paillier加密基于大整数分解问题，其安全性建立在对大整数分解的困难性基础上。
+
+## Paillier 加密算法的工作原理
+
+Paillier加密方案基于**模运算**和**大整数的分解问题**。它由以下步骤组成：密钥生成、加密、解密和加法同态。
+
+### 1. 密钥生成（Key Generation）
+
+Paillier的密钥生成算法如下：
+
+1. 选择两个大素数$p$和$q$，并计算$n = p \cdot q$。
+2. 计算$\lambda = \text{lcm}(p-1, q-1)$，其中$\text{lcm}(a, b)$是$a$和$b$的最小公倍数。
+3. 选择一个$g$（满足$g$是$n^2$的模幂中的生成元，通常选择$g = n+1$）。
+4. 计算$\mu = (L(g^\lambda \mod n^2))^{-1} \mod n$，其中$L(x) = \frac{x-1}{n}$是一个函数。
+
+最终，密钥对为：
+- **公钥**：$(n, g)$
+- **私钥**：$(\lambda, \mu)$
+
+### 2. 加密（Encryption）
+
+给定明文消息$m$（其中$m$是一个整数，满足$0 \leq m < n$），加密过程如下：
+
+1. 选择一个随机数$r$（其中$r$满足$0 < r < n$且$\gcd(r, n) = 1$）。
+2. 计算密文：
+   $$
+   c = g^m \cdot r^n \mod n^2
+   $$
+   其中$c$是加密后的密文。
+
+### 3. 解密（Decryption）
+
+给定密文$c$，解密过程如下：
+
+1. 计算：
+   $$
+   t = c^\lambda \mod n^2
+   $$
+2. 计算：
+   $$
+   L(t) = \frac{t-1}{n} \mod n
+   $$
+3. 最后，得到明文消息$m$：
+   $$
+   m = L(t) \cdot \mu \mod n
+   $$
+
+### 4. 加法同态性（Additive Homomorphism）
+
+Paillier加密的一个重要特性是**加法同态性**，即可以在密文上直接进行加法计算。给定两个密文$c_1 = E(a)$和$c_2 = E(b)$，它们分别是明文$a$和$b$的加密：
+
+- $c_1 = g^a \cdot r_1^n \mod n^2$
+- $c_2 = g^b \cdot r_2^n \mod n^2$
+
+加法同态性允许直接计算两个加密值的和。计算方式为：
+$$
+c_1 \cdot c_2 = g^a \cdot r_1^n \mod n^2 \cdot g^b \cdot r_2^n \mod n^2 = g^{a+b} \cdot (r_1 r_2)^n \mod n^2
+$$
+因此，密文$c_1 \cdot c_2$对应的解密结果是$a + b$，即：
+$$
+D(c_1 \cdot c_2) = a + b
+$$
+
+## Paillier 加密的安全性
+
+Paillier加密的安全性基于**大整数分解问题**，尤其是基于**同态攻击的难度**。虽然其在加密过程中能够执行加法操作，但其计算难度主要来源于对$n$和$n^2$的因数分解的难度。
+
+### 安全性概念
+
+- **选择明文攻击（CPA）**：Paillier加密是**选择明文攻击安全**的，意味着即使攻击者能够选择要加密的明文并获取其加密值，仍然无法从密文中恢复出明文。
+
+- **同态攻击**：Paillier加密的同态性使得在密文上执行加法时不会泄漏有关加密数据的任何信息。
+
+```py
+from phe import paillier
+
+# 密钥生成
+public_key, private_key = paillier.generate_paillier_keypair()
+
+# 加密明文
+m1 = 5
+m2 = 7
+ciphertext1 = public_key.encrypt(m1)
+ciphertext2 = public_key.encrypt(m2)
+
+# 同态加法
+ciphertext_sum = ciphertext1 + ciphertext2
+print(ciphertext1,ciphertext2,ciphertext_sum)
+
+# 解密
+decrypted_sum = private_key.decrypt(ciphertext_sum)
+print(f"Decrypted sum: {decrypted_sum}")  # 输出: 12
+```

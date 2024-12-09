@@ -98,6 +98,7 @@ export default sidebar(
     "/nt/ent":[
       "",
       "mod",
+      "Congruence",
       "eulerf",
       "eea",
       "dl"
@@ -109,12 +110,14 @@ export default sidebar(
       "topology"
     ],
     "/alg/elementary":[
-      ""
+      "",
+      "Polynomial"
     ],
     "/alg/abstract":[
       "",
       "group/",
-      "filed/"
+      "filed/",
+      "ring"
     ],
     "/alg/abstract/group":[
       "",
