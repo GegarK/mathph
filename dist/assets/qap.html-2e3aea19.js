@@ -1,0 +1,1 @@
+import{_ as a,K as t,L as c,M as e,N as r}from"./framework-fa417d66.js";const s={},o=e("h1",{id:"二次算术",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#二次算术","aria-hidden":"true"},"#"),r(" 二次算术")],-1),n=[o];function _(d,i){return t(),c("div",null,n)}const l=a(s,[["render",_],["__file","qap.html.vue"]]);export{l as default};

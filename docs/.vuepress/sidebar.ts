@@ -111,7 +111,9 @@ export default sidebar(
     ],
     "/alg/elementary":[
       "",
-      "Polynomial"
+      "Polynomial",
+      "R1CS",
+      "qap"
     ],
     "/alg/abstract":[
       "",
