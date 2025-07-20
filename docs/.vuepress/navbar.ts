@@ -95,5 +95,5 @@ export default navbar([
   },
   { text: "DeeLMind", icon: "plugin", link: "https://deelmind.com" },
   { text: "论坛", icon: "article", link: "https://forum.deelmind.com" },
-  { text: "资源", icon: "cache", link: "https://deelmind.org" },
+  // { text: "资源", icon: "cache", link: "https://deelmind.org" },
 ]);
