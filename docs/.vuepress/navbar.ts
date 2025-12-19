@@ -93,7 +93,7 @@ export default navbar([
       { text: "算法题目ACM", link: "/acm", icon: "arrow" },
     ]
   },
-  { text: "DeeLMind", icon: "plugin", link: "https://deelmind.com" },
-  { text: "论坛", icon: "article", link: "https://forum.deelmind.com" },
+  { text: "DeeLMind主站", icon: "plugin", link: "https://deelmind.com" },
+  // { text: "论坛", icon: "article", link: "https://forum.deelmind.com" },
   // { text: "资源", icon: "cache", link: "https://deelmind.org" },
 ]);
