@@ -12,10 +12,6 @@ actions:
     link: https://deelmind.com/pay/class/
     type: primary
 
-  - text: 加群资源
-    link: https://deelmind.com/pay/group
-    type: primary
-  
   - text: TSPACEY
     link: https://tspacey.deelmind.com/
     type: primary

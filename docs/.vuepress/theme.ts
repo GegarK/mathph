@@ -63,11 +63,10 @@ export default hopeTheme({
         notice: [
           {
             path: "/",
-            title: "重要公告（核心基础）",
+            title: "课程与服务",
             content:
-              '<ul><li>思维教程：<a class="deelmind" target="_blank" href="https://all.deelmind.com.cn/">《随缘自然而然》</a></li><li>群内课程：<a href="https://deelmind.com/pay/class/tiny">《群内直播课程》</a></li><li>群内课程：<a href="https://deelmind.com/pay/class/bin">《二进制安全》</a></li><li>群内课程：<a href="https://deelmind.com/pay/class/ai">《网络安全AI课程》</a></li><li>群内课程：<a href="https://deelmind.com/pay/group">《WEB3区块链虚拟货币》</a></li><li><a href="https://deelmind.com/pay/one2one">付费辅导：《一对一辅导》</a></li><li><a href="https://deelmind.com/pay/zixun">付费咨询:《项目技术咨询》</a></li></ul>'
+              '<ul><li>思 维 教程：<a class="deelmind" target="_blank" href="https://all.deelmind.com.cn/">《随缘自然而然》</a></li><li>一对一课程：<a href="https://deelmind.com/pay/one2one" target="_blank">《渗透测试》</a></li><li>一对一课程：<a href="https://deelmind.com/pay/one2one" target="_blank">《二进制安全》</a></li><li>一对一课程：<a href="https://deelmind.com/pay/one2one" target="_blank">《网络安全AI课程》</a></li><li>一对一课程：<a href="https://deelmind.com/pay/one2one" target="_blank">《WEB3区块链虚拟货币》</a></li><li><a href="https://deelmind.com/pay/one2one" target="_blank">付费辅导：《一对一辅导》</a></li><li><a href="https://deelmind.com/pay/zixun" target="_blank">付费咨询:《项目技术咨询》</a></li></ul>'
           },
-          
         ],
       },
     },
